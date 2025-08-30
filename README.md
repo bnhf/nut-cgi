@@ -1,4 +1,4 @@
-# nut-cgi - Network UPS Tools CGI (NUT-CGI) with expanded output oriented towards use with Portainer
+# nut-cgi-plus - Network UPS Tools CGI (NUT-CGI) with expanded output oriented towards use with Portainer
 
 <img width="1348" height="303" alt="screencapture-raspberrypi5-2025-08-30-06_38_15-edit" src="https://github.com/user-attachments/assets/2fce326a-072f-40a6-b0fd-15b323d3f919" />
 
@@ -8,12 +8,12 @@ The YAML below is intended to be self-documenting, and typically requires no edi
 
 ```yaml
 services:
-  nut-cgi: # This docker-compose typically requires no editing. Use the Environment variables section of Portainer to set your values.
+  nut-cgi-plus: # This docker-compose typically requires no editing. Use the Environment variables section of Portainer to set your values.
     # 2025.08.21
-    # GitHub home for this project: https://github.com/bnhf/nut-cgi.
-    # Docker container home for this project with setup instructions: https://hub.docker.com/r/bnhf/nut-cgi.
-    image: bnhf/nut-cgi:${TAG:-latest} # Add the tag like latest or test to the environment variables below.
-    container_name: nut-cgi
+    # GitHub home for this project: https://github.com/bnhf/nut-cgi-plus.
+    # Docker container home for this project with setup instructions: https://hub.docker.com/r/bnhf/nut-cgi-plus.
+    image: bnhf/nut-cgi-plus:${TAG:-latest} # Add the tag like latest or test to the environment variables below.
+    container_name: nut-cgi-plus
     dns_search: ${DOMAIN} # For Tailscale users using Magic DNS, add your Tailnet (tailxxxxx.ts.net) to use hostnames for remote nodes, otherwise use your local domain name.
     ports:
       - ${HOST_PORT:-3494}:80 # The port number to use on your Docker host. 3494 recommended.
