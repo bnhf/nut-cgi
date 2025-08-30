@@ -1,4 +1,4 @@
-#docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -f Dockerfile -t bnhf/nut-cgi:latest . --push --no-cache
+#docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -f Dockerfile -t bnhf/nut-cgi-plus:latest -t bnhf/nut-cgi-plus:2025.08.30 . --push --no-cache
 FROM debian:12-slim
 
 # Environment vars needed by Apache
